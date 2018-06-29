@@ -1,6 +1,6 @@
 # TWU July 2018
-@ Christie Goh
-Thoughtworks University assignments and exercises
+:cherry blossom: *author: Christie Goh* 
+Thoughtworks University assignments and exercises.
 
 ## Pre-TWU Assignments ##
 ### Week 1: Introductory Java Programming Exercises ###
