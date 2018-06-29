@@ -1,4 +1,4 @@
-# TWU
+# TWU July 2018
 ## Thoughtworks University Assignments ##
 
 ### Week 1: Introductory Java Programming Exercises ###
