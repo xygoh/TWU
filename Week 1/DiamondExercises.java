@@ -1,6 +1,7 @@
 public class DiamondExercises {
 
-    // Print a centered triangle of height n
+    /* Print a centered triangle of height n
+     * Default Usage: o=1, padding=0 */
     public static void isosceles_triangle(int n,int o,int padding){
         int i=1;
         int j=0;
