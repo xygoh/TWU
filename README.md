@@ -1,5 +1,5 @@
 # TWU July 2018
-:cherry blossom: *author: Christie Goh* 
+:cherry_blossom: *author: Christie Goh* 
 Thoughtworks University assignments and exercises.
 
 ## Pre-TWU Assignments ##
