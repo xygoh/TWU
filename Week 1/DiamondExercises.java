@@ -1,8 +1,9 @@
 public class DiamondExercises {
 
-    /* Print a centered triangle of height n
-     * Default Usage: o=1, padding=0 */
-    public static void isosceles_triangle(int n,int o,int padding){
+    /* Helper Method: Prints a centered triangle of height n
+     * o=1 for right side up
+     * o=2 for upside down triangle                            */
+    private static void isosceles_triangle_helper(int n,int o,int padding){
         int i=1;
         int j=0;
         int space=0;
@@ -31,17 +32,27 @@ public class DiamondExercises {
         }
     }
 
-    // Print a centered diamond of diameter n
+    /* Print a centered isoceles triangle of height n */
+    public static void isosceles_triangle(int n, int padding){
+    	isosceles_triangle_helper(n,1,padding);
+    }
+
+    /* Print a centered, upside-down isoceles triangle of height n */
+    private static void upside_down_isosceles(int n, int padding){
+    	isosceles_triangle_helper(n,2,padding);
+    }
+
+    /* Print a centered diamond of diameter n */
     public static void diamond(int n){
         // print normal triangle n-1
-        isosceles_triangle(n-1,1,1);
+        isosceles_triangle(n,1);
         // print line n asterisks
         TriangleExercises.horizontal_line(2*n-1);
         // print upside down triangle n-1
-        isosceles_triangle(n-1,2,1);
+        upside_down_isosceles(n,1);
     }
 
-    // Print a centered diamond with my name in the middle
+    /* Print a centered diamond with my name in the middle */
     public static void diamond_with_name(int n){
         String name="Christie";
         int l=name.length();
@@ -60,7 +71,7 @@ public class DiamondExercises {
         }
 
         // print normal triangle n-1
-        isosceles_triangle(n-1,1,triangle_padding);
+        isosceles_triangle(n-1,triangle_padding);
 
         // print name
         for (int i=0; i<name_padding; i++){
@@ -70,6 +81,6 @@ public class DiamondExercises {
         System.out.println(sb.toString());
 
         // print upside down triangle n-1
-        isosceles_triangle(n-1,2,triangle_padding);
+        upside_down_isosceles(n-1,triangle_padding);
     }
 }
